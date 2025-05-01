@@ -374,7 +374,6 @@ if model is not None and target_names is not None:
 
                     # Create a results DataFrame that includes original features and predictions
                     results_df = input_df.copy()
-                    results_df["Predicted_Class_Index"] = predictions
                     results_df["Predicted_Class"] = predicted_class_names
 
                     # --- Apply styling to the Predicted_Class column ---
