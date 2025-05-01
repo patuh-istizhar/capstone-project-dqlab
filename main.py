@@ -186,6 +186,17 @@ model, scaler, config_data, requires_scaling, target_names = load_resources(
     selected_dataset
 )
 
+# --- Main Content Area ---
+
+# Dynamically set the main title based on the selected dataset with emoji
+dataset_emoji = DATASET_CONFIG[selected_dataset].get(
+    "emoji", "📊"
+)  # Get emoji from config, default to chart
+st.title(f"{selected_dataset} Classification App {dataset_emoji}")
+
+# Display the dataset description
+st.markdown(DATASET_CONFIG[selected_dataset]["description"])
+
 # Proceed only if resources were loaded successfully
 if model is not None and target_names is not None:
     st.subheader("Get Predictions")
