@@ -1,0 +1,3 @@
+Best_Model: Logistic Regression
+Requires_Scaling: True
+Target_Names: ['malignant', 'benign']

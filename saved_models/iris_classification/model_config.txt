@@ -1,0 +1,3 @@
+Best_Model: Random Forest
+Requires_Scaling: False
+Target_Names: ['setosa', 'versicolor', 'virginica']
